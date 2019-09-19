@@ -4,10 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>
+            Install Your Development Environment (and Learn Basic Commands)
+        </title>
     </head>
     <body>
         <h1>Install Your Development Environment (and Learn Basic Commands)</h1>
-        <p>We use Ubuntu or Xubuntu in a VM</p>
         <section>
             <header>
                 <h2>
@@ -68,8 +70,12 @@
                             menu. Right click on it, and go to “Settings”. Click
                             on the “System” tab and then the “Processor” tab.
                             Increase the Processor(s) to 2. If this screen
-                            prevents you from increasing processors, you need to <a href=https://www.google.com/search?q=enable+virtualization+windows">enable
-                            virtualization</a> in your computer’s BIOS/UEFI settings.
+                            prevents you from increasing processors, you need to
+                            <a
+                                href="https://www.google.com/search?q=enable+virtualization+windows"
+                                >enable virtualization</a
+                            >
+                            in your computer’s BIOS/UEFI settings.
                         </p>
                         <p>
                             Next, go to the “Storage” tab and in the
@@ -97,17 +103,50 @@
                         </p>
                     </li>
                     <li>
-                        Install and enable Guest Additions  
+                        Install and enable Guest Additions
                         <p>
                             With the vm running, do the following steps:
                         </p>
                         <ol>
-                            <li>Click “Devices” -> “Insert Guest additions CD image” in the menu bar</li>
-                            <li>Open a terminal by pushing <code>ctrl + alt+ t</code> on the keyboard, if a terminal does not open, click anywhere on the desktop of the VM and try again.</li>
-                            <li>Type the following command into the terminal: <code>sudo apt install gcc make perl</code> You will be asked to type in the password you setup earlier. As you type your password, you’ll notice there is no visual feedback. This is a security measure. Trust that it is taking you input. (Just type it and then push enter). If an error is thrown, reboot the VM and try the steps in this list again.</li>
-                            <li>Run: <code>sudo /media/$USER/VBox*/VBoxLinux*.run</code> This may ask you for a password as well.</li>
-                            <li>Run <code>reboot</code> in the terminal, and the VM should reboot. If this does not work, reboot the VM by clicking the “start” menu, and selecting “reboot.”</li>
-                            <li>Click <strong>devices</strong> in the menu bar and go to <strong>shared clipboard</strong> then select the bidirectional option.
+                            <li>
+                                Click “Devices” -> “Insert Guest additions CD
+                                image” in the menu bar
+                            </li>
+                            <li>
+                                Open a terminal by pushing
+                                <code>ctrl + alt+ t</code> on the keyboard, if a
+                                terminal does not open, click anywhere on the
+                                desktop of the VM and try again.
+                            </li>
+                            <li>
+                                Type the following command into the terminal:
+                                <code>sudo apt install gcc make perl</code> You
+                                will be asked to type in the password you setup
+                                earlier. As you type your password, you’ll
+                                notice there is no visual feedback. This is a
+                                security measure. Trust that it is taking you
+                                input. (Just type it and then push enter). If an
+                                error is thrown, reboot the VM and try the steps
+                                in this list again.
+                            </li>
+                            <li>
+                                Run:
+                                <code
+                                    >sudo
+                                    /media/$USER/VBox*/VBoxLinux*.run</code
+                                >
+                                This may ask you for a password as well.
+                            </li>
+                            <li>
+                                Run <code>reboot</code> in the terminal, and the
+                                VM should reboot. If this does not work, reboot
+                                the VM by clicking the “start” menu, and
+                                selecting “reboot.”
+                            </li>
+                            <li>
+                                Click <strong>devices</strong> in the menu bar
+                                and go to <strong>shared clipboard</strong> then
+                                select the bidirectional option.
                             </li>
                         </ol>
                     </li>
@@ -115,48 +154,228 @@
             </article>
         </section>
         <section>
-            <h2> Visual Studio Code</h2>
+            <h2>Visual Studio Code</h2>
             <article>
                 <h3>Installing visual studio code</h3>
-                <p>Install VS Code from the .deb on <a href="https://code.visualstudio.com/">the site</a></p>
+                <p>
+                    Install VS Code from the .deb on
+                    <a href="https://code.visualstudio.com/">the site</a>
+                </p>
             </article>
             <article>
                 <h3>Set up</h3>
                 <ol>
                     <li>Turn Word Wrap on</li>
                     <li>(optional) Change tab size to 2 spaces</li>
-                    <li>Install <strong>Solarized Color Theme</strong> extension</li>
+                    <li>
+                        Install <strong>Solarized Color Theme</strong> extension
+                    </li>
                     <li>
                         Install <strong>Live Server extension</strong> extension
-                        <p>open a html file and then right-click and choose <em>open with live server</em></p>
+                        <p>
+                            open a html file and then right-click and choose
+                            <em>open with live server</em>
+                        </p>
                     </li>
-                    <li>Install <strong>HTML CSS Support</strong> for Class and Id attribute completion</li>
-                    <li>Install <strong>Auto Rename Tag</strong> for auto renaming of the paired tag when you rename one of them</li>
+                    <li>
+                        Install <strong>HTML CSS Support</strong> for Class and
+                        Id attribute completion
+                    </li>
+                    <li>
+                        Install <strong>Auto Rename Tag</strong> for auto
+                        renaming of the paired tag when you rename one of them
+                    </li>
                     <li>
                         Install <strong>Prettier - Code formatter</strong>
-                        <p>change settings > <em>format on save</em> to enable</p>
-                        <p>search <em>prettier</em> in settings to change the settings for the code formatter</p>
+                        <p>
+                            change settings > <em>format on save</em> to enable
+                        </p>
+                        <p>
+                            search <em>prettier</em> in settings to change the
+                            settings for the code formatter
+                        </p>
                     </li>
-                    <li>Install <strong>indent-rainbow</strong> for easier to see indentations</li>
-                    <li>Install <strong>Bracket Pair Colorizer 2</strong> for colorized brackets pair</li>
-                    <li>Install <strong>Code Spell Checker</strong> to help catch common spelling errors in code nb: check for English</li>
+                    <li>
+                        Install <strong>indent-rainbow</strong> for easier to
+                        see indentations
+                    </li>
+                    <li>
+                        Install <strong>Bracket Pair Colorizer 2</strong> for
+                        colorized brackets pair
+                    </li>
+                    <li>
+                        Install <strong>Code Spell Checker</strong> to help
+                        catch common spelling errors in code nb: check for
+                        English
+                    </li>
                 </ol>
             </article>
             <article>
                 <h3>Basic commands</h3>
-                    <ul>
-                        <li>Multiple cursor with <code>ctrl + click</code></li>
-                        <li>Multiple cursors for next occurrence with <code>ctrl + d</code> and <code>ctrl + shift + l</code></li>
-                        <li><code>alt + shift + down or up arrow</code> to add cursor above or below</li>
-                        <li>Basic navigation <code>ctrl + home</code> to go to the beginning of the document, <code>ctrl + end</code> to go to the end  </li>
-                        <li><code>home</code> to go to the beginning of a line, <code>end</code> to go to to the end</li>
-                        <li>Get into a line and use <code>alt + up or down</code> to move the line around the document</li>
-                        <li>Get into a line and use <code>ctrl + c</code> to copy the line and then <code>ctrl + v</code> to paste it</li>
-                        <li><code>ctrl + shift + k</code> to delete a line</li>
-                        <li><code>ctrl + shift + alt + down or up arrow</code> to copy line down or up</li>
-                        <li><code>ctrl + /</code> to add a comment, or select text and then do <code>ctrl + /</code> to comment out a block, do it again to undo the comment</li>
-                        <li><code>ctrl + shit + v</code> to open a live preview for a .md file</li>
-                    </ul>
+                <ul>
+                    <li>Multiple cursor with <code>ctrl + click</code></li>
+                    <li>
+                        Multiple cursors for next occurrence with
+                        <code>ctrl + d</code> and <code>ctrl + shift + l</code>
+                    </li>
+                    <li>
+                        <code>alt + shift + down or up arrow</code> to add
+                        cursor above or below
+                    </li>
+                    <li>
+                        Basic navigation <code>ctrl + home</code> to go to the
+                        beginning of the document, <code>ctrl + end</code> to go
+                        to the end
+                    </li>
+                    <li>
+                        <code>home</code> to go to the beginning of a line,
+                        <code>end</code> to go to to the end
+                    </li>
+                    <li>
+                        Get into a line and use <code>alt + up or down</code> to
+                        move the line around the document
+                    </li>
+                    <li>
+                        Get into a line and use <code>ctrl + c</code> to copy
+                        the line and then <code>ctrl + v</code> to paste it
+                    </li>
+                    <li><code>ctrl + shift + k</code> to delete a line</li>
+                    <li>
+                        <code>ctrl + shift + alt + down or up arrow</code> to
+                        copy line down or up
+                    </li>
+                    <li>
+                        <code>ctrl + /</code> to add a comment, or select text
+                        and then do <code>ctrl + /</code> to comment out a
+                        block, do it again to undo the comment
+                    </li>
+                    <li>
+                        <code>ctrl + shit + v</code> to open a live preview for
+                        a .md file
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h2>Git and Github</h2>
+            <article>
+                <h3>Installing Git</h3>
+                <ol>
+                    <li>
+                        Update the packages
+                        <p><code>sudo apt-get update</code></p>
+                        <p><code>sudo apt-get upgrade</code></p>
+                    </li>
+                    <li>Install git</li>
+                    <p><code>sudo apt-get install git</code></p>
+                </ol>
+            </article>
+            <article>
+                <h3>Configuring Git</h3>
+                <pre>
+                    <code>
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
+    git config --global credential.helper 'cache --timeout=3600'
+    git config --global push.default current
+                    </code>
+                </pre>
+                <p>
+                    Last one get rid of the need to do
+                    <code>git push --set-upstream</code>. After this,
+                    <code>git push -u</code> push current branch to a remote
+                    branch of the same name.
+                </p>
+                <p>
+                    <a
+                        href="https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account"
+                        >Add a new SSH key to your GitHub account</a
+                    >
+                </p>
+                <p>
+                    <a
+                        href="https://help.github.com/en/articles/testing-your-ssh-connection"
+                        >Testing your SSH connection</a
+                    >
+                </p>
+            </article>
+        </section>
+        <section>
+            <header>
+                <h2>
+                    Terminal
+                    <a href="https://wesbos.com/command-line-video-tutorials/"
+                        >Source</a
+                    >
+                </h2>
+                <p><code>ctrl + shift + t</code> to start the terminal</p>
+                <p><code>ctrl + shift + c</code> to copy in the terminal</p>
+                <p><code>ctrl + shift + v</code> to paste in the terminal</p>
+                <p><code>tab</code> completion is a thing!</p>
+            </header>
+            <article>
+                <h3>Basic Commands</h3>
+                <table>
+                    <tr>
+                        <th>Command</th>
+                        <th>What it does</th>
+                    </tr>
+                    <tr>
+                        <td><code>pwd</code></td>
+                        <td>
+                            for present working directory, to find out where we
+                            are
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>cd name-of-dir</code></td>
+                        <td>to change to <em>name-of-dir</em> directory</td>
+                    </tr>
+                    <tr>
+                        <td><code>cd ..</code></td>
+                        <td>to go up a level in directories</td>
+                    </tr>
+                    <tr>
+                        <td><code>cd ~</code></td>
+                        <td>to go to the home directory</td>
+                    </tr>
+                    <tr>
+                        <td><code>mkdir</code></td>
+                        <td>to make a directory</td>
+                    </tr>
+                    <tr>
+                        <td><code>ls</code></td>
+                        <td>to list the files in the directory</td>
+                    </tr>
+                    <tr>
+                        <td><code>ls -l</code></td>
+                        <td>to list the files in the directory with full info</td>
+                    </tr>
+                    <tr>
+                        <td><code>rm name-of-file</code></td>
+                        <td>to remove <em>name-of-file</em></td>
+                    </tr>
+                    <tr>
+                        <td><code>rm -r name-of-directory/code></td>
+                        <td>to remove <em>name-of-dir</em></td>
+                    </tr>
+                    <tr>
+                        <td><code>touch name-of-file.txt</code></td>
+                        <td>to create<em>name-of-file.txt</em></td>
+                    </tr>
+                    <tr>
+                        <td><code>cp a.txt b.txt</code></td>
+                        <td>to copy <em>a.txt</em> to <em>b.txt</em></td>
+                    </tr>
+                    <tr>
+                        <td><code>mv a.txt b.txt</code></td>
+                        <td>to rename <em>a.txt</em> to <em>b.txt</em></td>
+                    </tr>
+                    <tr>
+                        <td><code>clear</code></td>
+                        <td>to clear the terminal window</td>
+                    </tr>
+                </table>
             </article>
         </section>
     </body>
