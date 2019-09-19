@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25em;
+    color: #ffffff;
+    background-color: #555555;
+}
+
+h1 {
+    font-family: Lucida Grande;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: Lucida Grande;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: Lucida Grande;
+    font-size: 1.35em;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: lightsteelblue;
+}
+
+p,
+ul {
+    line-height: 1.5;
+}
+
+li > p {
+    margin: 0 auto;
+}
+
+/* Styling code */
+pre {
+    line-height: 1.2;
+    color: #ffffff;
+    background-color: #444444;
+    padding-top: 1em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+
+code {
+    font-size: 1.15em;
+    background-color: #444444;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
