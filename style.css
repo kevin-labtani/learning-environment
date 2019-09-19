@@ -9,30 +9,37 @@ body {
     flex-direction: column;
     font-family: "Open Sans", sans-serif;
     font-size: 1.25em;
-    color: #ffffff;
-    background-color: #555555;
+    color: #839496;
+    background-color: #002b36;
 }
 
 h1 {
     font-family: Lucida Grande;
     font-size: 2em;
+    color: #dc322f;
 }
 
 h2 {
     font-family: Lucida Grande;
     font-size: 1.5em;
+    color: #cb4b16;
 }
 
 h3 {
     font-family: Lucida Grande;
     font-size: 1.35em;
-    clear: both;
+    color: #b58900;
 }
 
 a {
     text-decoration: none;
     font-weight: bold;
-    color: lightsteelblue;
+    color: #268bd2;
+}
+
+strong,
+em {
+    color: #93a1a1;
 }
 
 p,
@@ -44,6 +51,10 @@ li {
     list-style-type: upper-roman;
 }
 
+li > ol > li {
+    list-style-type: decimal;
+}
+
 li > p {
     margin: 0 auto;
 }
@@ -51,8 +62,8 @@ li > p {
 /* Styling code */
 pre {
     line-height: 1.2;
-    color: #ffffff;
-    background-color: #444444;
+    color: #839496;
+    background-color: #073642;
     padding-top: 1em;
     width: 80%;
     margin-left: auto;
@@ -62,7 +73,7 @@ pre {
 
 code {
     font-size: 1.15em;
-    background-color: #444444;
+    background-color: #073642;
     padding-left: 0.4em;
     padding-right: 0.4em;
 }
