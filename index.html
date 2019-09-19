@@ -263,11 +263,11 @@
                 <ol>
                     <li>
                         Update the packages
-                        <p><code>sudo apt-get update</code></p>
-                        <p><code>sudo apt-get upgrade</code></p>
+                        <div><code>sudo apt-get update</code></div>
+                        <div><code>sudo apt-get upgrade</code></div>
                     </li>
                     <li>Install git</li>
-                    <p><code>sudo apt-get install git</code></p>
+                    <div><code>sudo apt-get install git</code></div>
                 </ol>
             </article>
             <article>
@@ -305,13 +305,13 @@
                 <h2>
                     Terminal
                     <a href="https://wesbos.com/command-line-video-tutorials/"
-                        >Source</a
+                        >(source)</a
                     >
                 </h2>
-                <p><code>ctrl + shift + t</code> to start the terminal</p>
-                <p><code>ctrl + shift + c</code> to copy in the terminal</p>
-                <p><code>ctrl + shift + v</code> to paste in the terminal</p>
-                <p><code>tab</code> completion is a thing!</p>
+                <div><code>ctrl + shift + t</code> to start the terminal</div>
+                <div><code>ctrl + shift + c</code> to copy in the terminal</div>
+                <div><code>ctrl + shift + v</code> to paste in the terminal</div>
+                <div><code>tab</code> completion is a thing!</div>
             </header>
             <article>
                 <h3>Basic Commands</h3>
@@ -376,6 +376,78 @@
                         <td>to clear the terminal window</td>
                     </tr>
                 </table>
+            </article>
+            <article>
+                <h3>Installing ZSH and Oh My Zsh</h3>
+                <p>
+                    Z-shell is one of the most popular shell  
+                </p>
+                <p>
+                    <a href="https://ohmyz.sh/">Oh My Zsh</a> is a framework buit on top of ZSH
+                </p>
+                <ol>
+                    <li>
+                        Install prerequisites
+                        <div><code>sudo apt install zsh</code></div>
+                        <div><code>sudo apt-get install powerline fonts-powerline</code></div>
+                        <div><code>echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699".</code> <span>to see if your font is compatible</span></div>
+                    </li>
+                    <li>
+                        Install oh-my-zsh
+                        <div><code>sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</code></div>
+                        <p>It should prompt you to change the default shell to oh-my-zsh
+                            </p>
+                    </li>
+                    <li>Log out and Log back in</li>
+                </ol>
+            </article>
+            <article>
+                <h3>Customize Terminal colors and font</h3>
+                <p>You can change the colors and font through the terminal configuration</p>
+                <p>pick Solarized dark</p>
+            </article>
+            <article>
+                <h3>Customize Oh My Zsh theme and prompt</h3>
+                <p>
+                    Check out <a href="https://github.com/robbyrussell/oh-my-zsh">Oh my zsh</a> to see existing themes  
+                </p>
+                <p>
+                    <code>code ~/.zshrc</code> to edit, then change <code>ZSH_THEME</code> env variable to the chosen theme, eg. <a href="https://github.com/agnoster/agnoster-zsh-theme"><code>ZSH_THEME="agnoster</code>"</a>
+                </p> 
+                <p>restart the terminal to apply the theme</p>
+            </article>
+            <article>
+                <h3>Zsh basic features</h3>
+                <ul>
+                    <li>Able to use lowercase even if dir or file name is uppercase, it's smart enough to change</li>
+                    <li><code>cd + space + tab</code> will open a list of all directories (with already escaped spaces), <code>tab</code> again and you can navigate through the list with arrow keys</li>
+                    <li>Use <code>~</code> to go home, or <code>..</code> to go up a level without having to type <code>cd</code></li>
+                    <li><code>ctrl</code> and click a link will take you to it</li>
+                    <li>Use <code>take name_of_dir</code> to replace <code>mkdir name_of_dir</code>  + <code>cd name_of_dir</code></li>
+                    <li>Use eg. <code>ls - tab</code> to see all the possible flags for ls</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Zsh advanced hisory</h3>
+                <p>Type the command eg. <code>git + space</code> and then use up/down arrow to navigate through your history for that specific command
+                </p>
+            </article>
+            <article>
+                <h3>Zsh plugins</h3>
+                <p>See <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins">plugins</a> for a list  
+                </p>
+                <p>
+                    <code>code ~/.zshrc</code> to add a plugin to the plugin list eg. <strong>extract</strong> 
+                </p>
+                <p>
+                    <code>source ~/.zshrc</code> to update  
+                </p>
+                <p>
+                    Now you can extract any file with <code>extract abc.tar.gz</code> and don't have to memorize the specifics  
+                </p>
+                <p>
+                    <code>git</code> plugin is installed by default, use <code>git + space + tab</code> to see all the possible commands for git
+                </p>
             </article>
         </section>
     </body>
