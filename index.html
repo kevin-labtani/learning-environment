@@ -4,9 +4,160 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Document</title>
     </head>
     <body>
-        <h1>hello world.</h1>
+        <h1>Install Your Development Environment (and Learn Basic Commands)</h1>
+        <p>We use Ubuntu or Xubuntu in a VM</p>
+        <section>
+            <header>
+                <h2>
+                    Operating System
+                    <a
+                        href="https://www.theodinproject.com/courses/web-development-101/lessons/prerequisites"
+                        >(source)</a
+                    >
+                </h2>
+                <p>We use Ubuntu or Xubuntu in a VM</p>
+            </header>
+            <article>
+                <h3>Installing Xubuntu in a VM on Windows</h3>
+                <ol>
+                    <li>
+                        Download
+                        <a href="https://www.virtualbox.org/wiki/Downloads"
+                            >VirtualBox</a
+                        >
+                        for Windows hosts.
+                    </li>
+                    <li>
+                        Download the latest LTS release from
+                        <a href="https://xubuntu.org/download">Xubuntu</a>
+                    </li>
+                    <li>Install VirtualBox</li>
+                    <li>
+                        Set up Xubuntu
+                        <p>
+                            Click on the “New” button to create a virtual
+                            operating system. Give it a name of “Xubuntu”, leave
+                            the “Machine Folder” as is, set the “Type” to
+                            “Linux” and be sure “Version” is set to “Ubuntu
+                            (64-bit)”. Continue by pressing “Next”, and choose
+                            the following options in the next steps:
+                        </p>
+                        <ol>
+                            <li>
+                                Memory size: Use 2048 MB or more if possible.
+                            </li>
+                            <li>Hard disk: “Create a virtual hard disk”.</li>
+                            <li>
+                                Hard disk file type: Choose the VDI (VirtualBox
+                                disk image) option.
+                            </li>
+                            <li>
+                                Storage on physical hard disk: “Dynamically
+                                allocated”.
+                            </li>
+                            <li>
+                                File location and size: 20 GB for the virtual
+                                hard disk or more is recommended.
+                            </li>
+                        </ol>
+                        <p>
+                            After completing the last step, click the “Create”
+                            button. Your new virtual OS should now appear in the
+                            menu. Right click on it, and go to “Settings”. Click
+                            on the “System” tab and then the “Processor” tab.
+                            Increase the Processor(s) to 2. If this screen
+                            prevents you from increasing processors, you need to <a href=https://www.google.com/search?q=enable+virtualization+windows">enable
+                            virtualization</a> in your computer’s BIOS/UEFI settings.
+                        </p>
+                        <p>
+                            Next, go to the “Storage” tab and in the
+                            “Attributes” column, beside the “Optical Drive”
+                            indicator, click the round, blue icon. This will
+                            present a drop-down menu. Click “Choose Virtual
+                            Optical Disk File…” and select the Xubuntu ISO file
+                            you downloaded earlier. If you aren’t sure where to
+                            find it, start by looking in your Downloads folder.
+                        </p>
+                        <p>
+                            With all that complete, click “OK” to save the
+                            changes.
+                        </p>
+                        <p>
+                            You can start the VM by right clicking on the icon
+                            in the menu and by clicking the large “Start” arrow
+                            at the top.
+                        </p>
+                        <p>
+                            When the VM starts up, you’ll be asked to install
+                            Xubuntu. All of the default options can be left
+                            alone, including the Installation type (“Erase disk
+                            and install Ubuntu”).
+                        </p>
+                    </li>
+                    <li>
+                        Install and enable Guest Additions  
+                        <p>
+                            With the vm running, do the following steps:
+                        </p>
+                        <ol>
+                            <li>Click “Devices” -> “Insert Guest additions CD image” in the menu bar</li>
+                            <li>Open a terminal by pushing <code>ctrl + alt+ t</code> on the keyboard, if a terminal does not open, click anywhere on the desktop of the VM and try again.</li>
+                            <li>Type the following command into the terminal: <code>sudo apt install gcc make perl</code> You will be asked to type in the password you setup earlier. As you type your password, you’ll notice there is no visual feedback. This is a security measure. Trust that it is taking you input. (Just type it and then push enter). If an error is thrown, reboot the VM and try the steps in this list again.</li>
+                            <li>Run: <code>sudo /media/$USER/VBox*/VBoxLinux*.run</code> This may ask you for a password as well.</li>
+                            <li>Run <code>reboot</code> in the terminal, and the VM should reboot. If this does not work, reboot the VM by clicking the “start” menu, and selecting “reboot.”</li>
+                            <li>Click <strong>devices</strong> in the menu bar and go to <strong>shared clipboard</strong> then select the bidirectional option.
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </article>
+        </section>
+        <section>
+            <h2> Visual Studio Code</h2>
+            <article>
+                <h3>Installing visual studio code</h3>
+                <p>Install VS Code from the .deb on <a href="https://code.visualstudio.com/">the site</a></p>
+            </article>
+            <article>
+                <h3>Set up</h3>
+                <ol>
+                    <li>Turn Word Wrap on</li>
+                    <li>(optional) Change tab size to 2 spaces</li>
+                    <li>Install <strong>Solarized Color Theme</strong> extension</li>
+                    <li>
+                        Install <strong>Live Server extension</strong> extension
+                        <p>open a html file and then right-click and choose <em>open with live server</em></p>
+                    </li>
+                    <li>Install <strong>HTML CSS Support</strong> for Class and Id attribute completion</li>
+                    <li>Install <strong>Auto Rename Tag</strong> for auto renaming of the paired tag when you rename one of them</li>
+                    <li>
+                        Install <strong>Prettier - Code formatter</strong>
+                        <p>change settings > <em>format on save</em> to enable</p>
+                        <p>search <em>prettier</em> in settings to change the settings for the code formatter</p>
+                    </li>
+                    <li>Install <strong>indent-rainbow</strong> for easier to see indentations</li>
+                    <li>Install <strong>Bracket Pair Colorizer 2</strong> for colorized brackets pair</li>
+                    <li>Install <strong>Code Spell Checker</strong> to help catch common spelling errors in code nb: check for English</li>
+                </ol>
+            </article>
+            <article>
+                <h3>Basic commands</h3>
+                    <ul>
+                        <li>Multiple cursor with <code>ctrl + click</code></li>
+                        <li>Multiple cursors for next occurrence with <code>ctrl + d</code> and <code>ctrl + shift + l</code></li>
+                        <li><code>alt + shift + down or up arrow</code> to add cursor above or below</li>
+                        <li>Basic navigation <code>ctrl + home</code> to go to the beginning of the document, <code>ctrl + end</code> to go to the end  </li>
+                        <li><code>home</code> to go to the beginning of a line, <code>end</code> to go to to the end</li>
+                        <li>Get into a line and use <code>alt + up or down</code> to move the line around the document</li>
+                        <li>Get into a line and use <code>ctrl + c</code> to copy the line and then <code>ctrl + v</code> to paste it</li>
+                        <li><code>ctrl + shift + k</code> to delete a line</li>
+                        <li><code>ctrl + shift + alt + down or up arrow</code> to copy line down or up</li>
+                        <li><code>ctrl + /</code> to add a comment, or select text and then do <code>ctrl + /</code> to comment out a block, do it again to undo the comment</li>
+                        <li><code>ctrl + shit + v</code> to open a live preview for a .md file</li>
+                    </ul>
+            </article>
+        </section>
     </body>
 </html>
