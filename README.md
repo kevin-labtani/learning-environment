@@ -22,7 +22,7 @@ Projet réalisé entièrement en HTML et CSS (sans JS)
 
 ## Progression
 
-Projet en cours au 19 Septembre 2019
+Projet complété le 19 Septembre 2019
 
 ## Remerciements
 

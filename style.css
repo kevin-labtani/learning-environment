@@ -76,4 +76,5 @@ code {
     background-color: #073642;
     padding-left: 0.4em;
     padding-right: 0.4em;
+    display: block;
 }

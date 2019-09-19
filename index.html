@@ -9,7 +9,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" type="text/css" href="style.css" />
-        
+
         <title>
             Install Your Development Environment (and Learn Basic Commands)
         </title>
@@ -269,19 +269,22 @@
                 <ol>
                     <li>
                         Update the packages
-                        <div><code>sudo apt-get update</code></div>
-                        <div><code>sudo apt-get upgrade</code></div>
+                        <code>sudo apt-get update</code>
+                        <code>sudo apt-get upgrade</code>
                     </li>
                     <li>Install git</li>
-                    <div><code>sudo apt-get install git</code></div>
+                    <code>sudo apt-get install git</code>
                 </ol>
             </article>
             <article>
                 <h3>Configuring Git</h3>
-                <div><code>git config --global user.name "John Doe"</code></div>
-                <div><code>git config --global user.email johndoe@example.com</code></div>
-                <div><code>git config --global credential.helper 'cache --timeout=3600'</code></div>
-                <div><code>git config --global push.default current</code></div>
+                <code>git config --global user.name "John Doe"</code>
+                <code>git config --global user.emailjohndoe@example.com</code>
+                <code
+                    >git config --global credential.helper 'cache
+                    --timeout=3600'</code
+                >
+                <code>git config --global push.default current</code>
                 <p>
                     Last one get rid of the need to do
                     <code>git push --set-upstream</code>. After this,
@@ -312,7 +315,9 @@
                 </h2>
                 <div><code>ctrl + shift + t</code> to start the terminal</div>
                 <div><code>ctrl + shift + c</code> to copy in the terminal</div>
-                <div><code>ctrl + shift + v</code> to paste in the terminal</div>
+                <div>
+                    <code>ctrl + shift + v</code> to paste in the terminal
+                </div>
                 <div><code>tab</code> completion is a thing!</div>
             </header>
             <article>
@@ -351,14 +356,16 @@
                     </tr>
                     <tr>
                         <td><code>ls -l</code></td>
-                        <td>to list the files in the directory with full info</td>
+                        <td>
+                            to list the files in the directory with full info
+                        </td>
                     </tr>
                     <tr>
                         <td><code>rm name-of-file</code></td>
                         <td>to remove <em>name-of-file</em></td>
                     </tr>
                     <tr>
-                        <td><code>rm -r name-of-directory/code></td>
+                        <td><code>rm -r name-of-directory</code></td>
                         <td>to remove <em>name-of-dir</em></td>
                     </tr>
                     <tr>
@@ -382,73 +389,129 @@
             <article>
                 <h3>Installing ZSH and Oh My Zsh</h3>
                 <p>
-                    Z-shell is one of the most popular shell  
+                    Z-shell is one of the most popular shell
                 </p>
                 <p>
-                    <a href="https://ohmyz.sh/">Oh My Zsh</a> is a framework buit on top of ZSH
+                    <a href="https://ohmyz.sh/">Oh My Zsh</a> is a framework
+                    buit on top of ZSH
                 </p>
                 <ol>
                     <li>
                         Install prerequisites
-                        <div><code>sudo apt install zsh</code></div>
-                        <div><code>sudo apt-get install powerline fonts-powerline</code></div>
-                        <div><code>echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699"</code> <span>to see if your font is compatible</span></div>
+                        <code>sudo apt install zsh</code>
+                        <code
+                            >sudo apt-get install powerline
+                            fonts-powerline</code
+                        >
+                        <code
+                            >echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1
+                            \u2699"</code
+                        >
+                        <span>to see if your font is compatible</span>
                     </li>
                     <li>
                         Install oh-my-zsh
-                        <div><code>sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</code></div>
-                        <p>It should prompt you to change the default shell to oh-my-zsh
-                            </p>
+                        <code>
+                            sh -c "$(curl -fsSL
+                            https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+                        </code>
+                        <p>
+                            It should prompt you to change the default shell to
+                            oh-my-zsh
+                        </p>
                     </li>
                     <li>Log out and Log back in</li>
                 </ol>
             </article>
             <article>
                 <h3>Customize Terminal colors and font</h3>
-                <p>You can change the colors and font through the terminal configuration</p>
+                <p>
+                    You can change the colors and font through the terminal
+                    configuration
+                </p>
                 <p>pick Solarized dark</p>
             </article>
             <article>
                 <h3>Customize Oh My Zsh theme and prompt</h3>
                 <p>
-                    Check out <a href="https://github.com/robbyrussell/oh-my-zsh">Oh my zsh</a> to see existing themes  
+                    Check out
+                    <a href="https://github.com/robbyrussell/oh-my-zsh"
+                        >Oh my zsh</a
+                    >
+                    to see existing themes
                 </p>
                 <p>
-                    <code>code ~/.zshrc</code> to edit, then change <code>ZSH_THEME</code> env variable to the chosen theme, eg. <a href="https://github.com/agnoster/agnoster-zsh-theme"><code>ZSH_THEME="agnoster"</code></a>
-                </p> 
+                    <code>code ~/.zshrc</code> to edit, then change
+                    <code>ZSH_THEME</code> env variable to the chosen theme, eg.
+                    <a href="https://github.com/agnoster/agnoster-zsh-theme"
+                        ><code>ZSH_THEME="agnoster"</code></a
+                    >
+                </p>
                 <p>Restart the terminal to apply the theme</p>
             </article>
             <article>
                 <h3>Zsh basic features</h3>
                 <ul>
-                    <li>Able to use lowercase even if dir or file name is uppercase, it's smart enough to change</li>
-                    <li><code>cd + space + tab</code> will open a list of all directories (with already escaped spaces), <code>tab</code> again and you can navigate through the list with arrow keys</li>
-                    <li>Use <code>~</code> to go home, or <code>..</code> to go up a level without having to type <code>cd</code></li>
-                    <li><code>ctrl</code> and click a link will take you to it</li>
-                    <li>Use <code>take name_of_dir</code> to replace <code>mkdir name_of_dir</code>  + <code>cd name_of_dir</code></li>
-                    <li>Use eg. <code>ls - tab</code> to see all the possible flags for ls</li>
+                    <li>
+                        Able to use lowercase even if dir or file name is
+                        uppercase, it's smart enough to change
+                    </li>
+                    <li>
+                        <code>cd + space + tab</code> will open a list of all
+                        directories (with already escaped spaces),
+                        <code>tab</code> again and you can navigate through the
+                        list with arrow keys
+                    </li>
+                    <li>
+                        Use <code>~</code> to go home, or <code>..</code> to go
+                        up a level without having to type <code>cd</code>
+                    </li>
+                    <li>
+                        <code>ctrl</code> and click a link will take you to it
+                    </li>
+                    <li>
+                        Use <code>take name_of_dir</code> to replace
+                        <code>mkdir name_of_dir</code> +
+                        <code>cd name_of_dir</code>
+                    </li>
+                    <li>
+                        Use eg. <code>ls - tab</code> to see all the possible
+                        flags for ls
+                    </li>
                 </ul>
             </article>
             <article>
                 <h3>Zsh advanced hisory</h3>
-                <p>Type the command eg. <code>git + space</code> and then use up/down arrow to navigate through your history for that specific command
+                <p>
+                    Type the command eg. <code>git + space</code> and then use
+                    up/down arrow to navigate through your history for that
+                    specific command
                 </p>
             </article>
             <article>
                 <h3>Zsh plugins</h3>
-                <p>See <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins">plugins</a> for a list  
+                <p>
+                    See
+                    <a
+                        href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins"
+                        >plugins</a
+                    >
+                    for a list
                 </p>
                 <p>
-                    <code>code ~/.zshrc</code> to add a plugin to the plugin list eg. <strong>extract</strong> 
+                    <code>code ~/.zshrc</code> to add a plugin to the plugin
+                    list eg. <strong>extract</strong>
+                </p>
+                <p><code>source ~/.zshrc</code> to update</p>
+                <p>
+                    Now you can extract any file with
+                    <code>extract abc.tar.gz</code> and don't have to memorize
+                    the specifics
                 </p>
                 <p>
-                    <code>source ~/.zshrc</code> to update  
-                </p>
-                <p>
-                    Now you can extract any file with <code>extract abc.tar.gz</code> and don't have to memorize the specifics  
-                </p>
-                <p>
-                    <code>git</code> plugin is installed by default, use <code>git + space + tab</code> to see all the possible commands for git
+                    <code>git</code> plugin is installed by default, use
+                    <code>git + space + tab</code> to see all the possible
+                    commands for git
                 </p>
             </article>
         </section>
